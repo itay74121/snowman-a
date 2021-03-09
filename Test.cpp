@@ -63,7 +63,23 @@ TEST_CASE("Good snowman bases")
 }
 
 TEST_CASE("Bad snowman code") {
-    CHECK_THROWS(snowman(555));
+    CHECK_THROWS(snowman(1));
+    CHECK_THROWS(snowman(11));
+    CHECK_THROWS(snowman(111));
+    CHECK_THROWS(snowman(1111));
+    CHECK_THROWS(snowman(11111));
+    CHECK_THROWS(snowman(111111));
+    CHECK_THROWS(snowman(1111111));
+    	
+    CHECK_THROWS(snowman(01111111));
+    CHECK_THROWS(snowman(10111111));
+    CHECK_THROWS(snowman(11011111));
+    CHECK_THROWS(snowman(11101111));
+    CHECK_THROWS(snowman(11110111));
+    CHECK_THROWS(snowman(11111011));
+    CHECK_THROWS(snowman(11111101));
+    CHECK_THROWS(snowman(11111110));
+
     /* Add more checks here */
 }
 
